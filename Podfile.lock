@@ -1,0 +1,16 @@
+PODS:
+  - AFNetworking (1.3.3)
+  - SVProgressHUD (1.0)
+  - UICKeyChainStore (1.0.5)
+
+DEPENDENCIES:
+  - AFNetworking (~> 1.3.x)
+  - SVProgressHUD
+  - UICKeyChainStore
+
+SPEC CHECKSUMS:
+  AFNetworking: 61fdd49e2ffe6380378df37b3b6e70630bb9dd66
+  SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
+  UICKeyChainStore: bf99e73603419dc706496dc23a3aae8a1c65cb83
+
+COCOAPODS: 0.31.1

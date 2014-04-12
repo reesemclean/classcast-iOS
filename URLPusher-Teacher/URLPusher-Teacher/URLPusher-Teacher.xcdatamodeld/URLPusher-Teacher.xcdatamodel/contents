@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3389" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="RDMDevice" representedClassName="RDMDevice" syncable="YES">
+        <attribute name="deviceType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasBeenDeleted" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pushToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="syncStatus" optional="YES" attributeType="Integer 16" defaultValueString="1" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RDMGroup" inverseName="devices" inverseEntity="RDMGroup" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RDMUser" inverseName="devices" inverseEntity="RDMUser" syncable="YES"/>
+    </entity>
+    <entity name="RDMGroup" representedClassName="RDMGroup" syncable="YES">
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasBeenDeleted" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="registrationToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="syncStatus" optional="YES" attributeType="Integer 16" defaultValueString="1" syncable="YES"/>
+        <relationship name="devices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RDMDevice" inverseName="groups" inverseEntity="RDMDevice" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RDMUser" inverseName="groups" inverseEntity="RDMUser" syncable="YES"/>
+    </entity>
+    <entity name="RDMGroupPlacement" representedClassName="RDMGroupPlacement" syncable="YES">
+        <attribute name="deviceID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupGUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasBeenProcessed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="placementType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RDMUser" inverseName="groupPlacements" inverseEntity="RDMUser" syncable="YES"/>
+    </entity>
+    <entity name="RDMLink" representedClassName="RDMLink" syncable="YES">
+        <attribute name="dateUpdatedOnDevice" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasBeenDeleted" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastSentOn" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="savedByUser" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="syncStatus" optional="YES" attributeType="Integer 16" defaultValueString="1" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RDMUser" inverseName="links" inverseEntity="RDMUser" syncable="YES"/>
+    </entity>
+    <entity name="RDMUser" representedClassName="RDMUser" syncable="YES">
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="registrationToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subscriptionExpirationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="devices" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RDMDevice" inverseName="user" inverseEntity="RDMDevice" syncable="YES"/>
+        <relationship name="groupPlacements" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RDMGroupPlacement" inverseName="user" inverseEntity="RDMGroupPlacement" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RDMGroup" inverseName="user" inverseEntity="RDMGroup" syncable="YES"/>
+        <relationship name="links" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RDMLink" inverseName="user" inverseEntity="RDMLink" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RDMDevice" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="RDMGroup" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="RDMGroupPlacement" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="RDMLink" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="RDMUser" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

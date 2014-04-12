@@ -1,0 +1,1124 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38131D5B17DC20E5009F383B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38131D5A17DC20E5009F383B /* SystemConfiguration.framework */; };
+		38131D5D17DC20EA009F383B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38131D5C17DC20EA009F383B /* MobileCoreServices.framework */; };
+		3814CE6217B3050600C0B345 /* RDMDataProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814CE6117B3050600C0B345 /* RDMDataProcessor.m */; };
+		3814CE6517B313CF00C0B345 /* RDMLink+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814CE6417B313CF00C0B345 /* RDMLink+Custom.m */; };
+		3814CE6817B4287D00C0B345 /* RDMGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814CE6717B4287D00C0B345 /* RDMGroup.m */; };
+		3814CE6B17B428B200C0B345 /* RDMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814CE6A17B428B200C0B345 /* RDMDevice.m */; };
+		3814CE6E17B428EC00C0B345 /* RDMDevice+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814CE6D17B428EC00C0B345 /* RDMDevice+Custom.m */; };
+		3814CE7117B428FA00C0B345 /* RDMGroup+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814CE7017B428FA00C0B345 /* RDMGroup+Custom.m */; };
+		3823513B17B1B57C003F7359 /* RDMUser+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823513A17B1B57C003F7359 /* RDMUser+Custom.m */; };
+		3823514117B1D444003F7359 /* RDMSyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823514017B1D444003F7359 /* RDMSyncEngine.m */; };
+		38237E481820CB6E0097FE69 /* RDMRevealMenuViewContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38237E471820CB6E0097FE69 /* RDMRevealMenuViewContainerController.m */; };
+		385E906B17BF066D00CB4DF6 /* RDMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 385E906A17BF066D00CB4DF6 /* RDMUser.m */; };
+		385E907617BF08B800CB4DF6 /* RDMGroupPlacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 385E907317BF08B800CB4DF6 /* RDMGroupPlacement.m */; };
+		385E907A17BF1DB700CB4DF6 /* RDMGroupPlacement+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 385E907917BF1DB700CB4DF6 /* RDMGroupPlacement+Custom.m */; };
+		388E6DE617A9AA17002B820D /* RDMSendLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6DE517A9AA17002B820D /* RDMSendLinkViewController.m */; };
+		388E6DEC17A9C5A0002B820D /* UIExpandableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6DEB17A9C5A0002B820D /* UIExpandableTableView.m */; };
+		388E6DF217A9C6EA002B820D /* RDMSelectGroupExpandingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6DF117A9C6EA002B820D /* RDMSelectGroupExpandingCell.m */; };
+		388E6DF517A9C6FA002B820D /* RDMSelectDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6DF417A9C6FA002B820D /* RDMSelectDeviceCell.m */; };
+		388E6E1217AA0C8E002B820D /* RDMTeacherDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E1117AA0C8E002B820D /* RDMTeacherDataController.m */; };
+		388E6E1617AA0D78002B820D /* URLPusher-Teacher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E1417AA0D78002B820D /* URLPusher-Teacher.xcdatamodeld */; };
+		388E6E3D17AAE3E2002B820D /* RDMTeacherSaveLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E3C17AAE3E2002B820D /* RDMTeacherSaveLinkViewController.m */; };
+		388E6E4117AAF346002B820D /* RDMTeacherLinkLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E4017AAF346002B820D /* RDMTeacherLinkLibraryViewController.m */; };
+		388E6E4617AAF722002B820D /* RDMLibraryLinkOnlyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E4517AAF722002B820D /* RDMLibraryLinkOnlyCell.m */; };
+		388E6E4917AAF7C0002B820D /* RDMLibraryLinkAndNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E4817AAF7C0002B820D /* RDMLibraryLinkAndNameCell.m */; };
+		388E6E4F17AAFD92002B820D /* RDMLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E4E17AAFD92002B820D /* RDMLink.m */; };
+		388E6E5217AD8383002B820D /* RDMSetupDevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E5117AD8383002B820D /* RDMSetupDevicesViewController.m */; };
+		388E6E5717AD8504002B820D /* RDMSetupGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E5617AD8504002B820D /* RDMSetupGroupsViewController.m */; };
+		388E6E5B17AD8AFF002B820D /* RDMDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E5A17AD8AFF002B820D /* RDMDeviceCell.m */; };
+		388E6E6817ADD89E002B820D /* RDMTeacherLinkLibraryViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E6717ADD89E002B820D /* RDMTeacherLinkLibraryViewController_iPad.m */; };
+		388E6E6B17ADD944002B820D /* RDMTeacherLinkLibraryURLAndNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E6A17ADD944002B820D /* RDMTeacherLinkLibraryURLAndNameCell.m */; };
+		388E6E6F17ADE6A3002B820D /* RDMSetupDevicesViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E6E17ADE6A3002B820D /* RDMSetupDevicesViewController_iPad.m */; };
+		388E6E7417ADE76D002B820D /* RDMDevicesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E7317ADE76D002B820D /* RDMDevicesCollectionViewCell.m */; };
+		388E6E7717ADF05E002B820D /* SSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E7617ADF05E002B820D /* SSLabel.m */; };
+		388E6E8517AE0AF5002B820D /* RDMSetupDevicesActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E8417AE0AF5002B820D /* RDMSetupDevicesActionsViewController.m */; };
+		388E6E8817AE0E66002B820D /* RDMLinkLibraryActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E8717AE0E66002B820D /* RDMLinkLibraryActionViewController.m */; };
+		388E6E8B17AE16FD002B820D /* RDMEditDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E8A17AE16FD002B820D /* RDMEditDeviceViewController.m */; };
+		388E6E9017AED52C002B820D /* RDMSetupGroupsViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E8F17AED52C002B820D /* RDMSetupGroupsViewController_iPad.m */; };
+		388E6E9317AED6CA002B820D /* RDMSetupGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E9217AED6CA002B820D /* RDMSetupGroupCell.m */; };
+		388E6E9617AED785002B820D /* RDMNewGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E9517AED785002B820D /* RDMNewGroupCell.m */; };
+		388E6E9917AEDFD2002B820D /* RDMEditGroupViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E9817AEDFD2002B820D /* RDMEditGroupViewController_iPad.m */; };
+		388E6E9C17AEE4F2002B820D /* RDMCreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E9B17AEE4F2002B820D /* RDMCreateGroupViewController.m */; };
+		388E6E9F17AEE793002B820D /* RDMCreateGroupPickDevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6E9E17AEE793002B820D /* RDMCreateGroupPickDevicesViewController.m */; };
+		388E6EA417AEEB83002B820D /* RDMCreateGroupDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6EA317AEEB83002B820D /* RDMCreateGroupDeviceCell.m */; };
+		388E6EAC17AF584A002B820D /* RDMTeacherLinkLibraryURLOnlyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6EAB17AF584A002B820D /* RDMTeacherLinkLibraryURLOnlyCell.m */; };
+		388E6EAF17B060D1002B820D /* RDMSetupGroupsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6EAE17B060D1002B820D /* RDMSetupGroupsTableViewCell.m */; };
+		388E6EB217B07250002B820D /* RDMNavigationControllerStatusBarHackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6EB117B07250002B820D /* RDMNavigationControllerStatusBarHackViewController.m */; };
+		388E6EB517B09614002B820D /* RDMTeacherSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6EB417B09614002B820D /* RDMTeacherSignInViewController.m */; };
+		388E6EB817B09C2B002B820D /* RDMIntroInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6EB717B09C2B002B820D /* RDMIntroInitialViewController.m */; };
+		388E6EBB17B09FED002B820D /* RDMTeacherCreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6EBA17B09FED002B820D /* RDMTeacherCreateAccountViewController.m */; };
+		388E6EBE17B0A26F002B820D /* RDMForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6EBD17B0A26F002B820D /* RDMForgotPasswordViewController.m */; };
+		388E6EC117B0A469002B820D /* RDMTeacherAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6EC017B0A469002B820D /* RDMTeacherAccountController.m */; };
+		388E6FFF17B0D1C8002B820D /* RDMBaseAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6FFA17B0D1C8002B820D /* RDMBaseAPIClient.m */; };
+		388E700017B0D1C8002B820D /* RDMLoginAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6FFC17B0D1C8002B820D /* RDMLoginAPIClient.m */; };
+		388E700117B0D1C8002B820D /* RDMTokenAuthAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E6FFE17B0D1C8002B820D /* RDMTokenAuthAPIClient.m */; };
+		388FACB917B8B4A90085A995 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 388FACB817B8B4A90085A995 /* UIImage+ImageEffects.m */; };
+		388FACBC17B8BE8C0085A995 /* RDMNavigationWithBackgroundImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388FACBB17B8BE8C0085A995 /* RDMNavigationWithBackgroundImageViewController.m */; };
+		388FACC317B9F8CC0085A995 /* RDMTeacherAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388FACC217B9F8CC0085A995 /* RDMTeacherAccountViewController.m */; };
+		388FACC617B9FFDA0085A995 /* RDMTeacherEditDisplayNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388FACC517B9FFDA0085A995 /* RDMTeacherEditDisplayNameViewController.m */; };
+		388FACC917B9FFE90085A995 /* RDMTeacherChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388FACC817B9FFE90085A995 /* RDMTeacherChangePasswordViewController.m */; };
+		388FACCC17BAEE5A0085A995 /* UIAlertView+ErrorHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 388FACCB17BAEE5A0085A995 /* UIAlertView+ErrorHelpers.m */; };
+		388FACCF17BB3F100085A995 /* RDMSubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388FACCE17BB3F100085A995 /* RDMSubscriptionViewController.m */; };
+		388FACD617BB548A0085A995 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 388FACD517BB548A0085A995 /* IAPHelper.m */; };
+		388FACD917BB54AE0085A995 /* RDMInAppPurchaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 388FACD817BB54AE0085A995 /* RDMInAppPurchaseHelper.m */; };
+		388FACDB17BB60AD0085A995 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388FACDA17BB60AD0085A995 /* StoreKit.framework */; };
+		388FACDE17BC06410085A995 /* NSData+NSString_Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 388FACDD17BC06410085A995 /* NSData+NSString_Conversion.m */; };
+		388FACE117BC562C0085A995 /* RDMSubscriptionUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388FACE017BC562C0085A995 /* RDMSubscriptionUpdateViewController.m */; };
+		38C3600B17C6892200257AD1 /* RDMPageViewDataSourceAndDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C3600A17C6892200257AD1 /* RDMPageViewDataSourceAndDelegate.m */; };
+		38C603FA17C747FB00FAC490 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C603F917C747FB00FAC490 /* Images.xcassets */; };
+		38C6040217CA88C400FAC490 /* RDMInstructionalImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C6040117CA88C400FAC490 /* RDMInstructionalImageViewController.m */; };
+		38D205AF17A886BA00343A5A /* RDMTeacherMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D205AE17A886BA00343A5A /* RDMTeacherMenuViewController.m */; };
+		38D205B517A8C80B00343A5A /* RDMMenuViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D205B417A8C80B00343A5A /* RDMMenuViewCell.m */; };
+		38D205D517A9902A00343A5A /* RDMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D205D417A9902A00343A5A /* RDMRootViewController.m */; };
+		38D205D717A990F400343A5A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D205D617A990F400343A5A /* QuartzCore.framework */; };
+		38D205DA17A99C8600343A5A /* RDMBlurredGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D205D917A99C8600343A5A /* RDMBlurredGradientView.m */; };
+		38E3BA0B17A872E3002A27AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E3BA0A17A872E3002A27AA /* UIKit.framework */; };
+		38E3BA0D17A872E3002A27AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E3BA0C17A872E3002A27AA /* Foundation.framework */; };
+		38E3BA0F17A872E3002A27AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E3BA0E17A872E3002A27AA /* CoreGraphics.framework */; };
+		38E3BA1517A872E3002A27AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38E3BA1317A872E3002A27AA /* InfoPlist.strings */; };
+		38E3BA1717A872E3002A27AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E3BA1617A872E3002A27AA /* main.m */; };
+		38E3BA1B17A872E3002A27AA /* RDMTeacherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E3BA1A17A872E3002A27AA /* RDMTeacherAppDelegate.m */; };
+		38E3BA2417A872E3002A27AA /* TeacherStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E3BA2217A872E3002A27AA /* TeacherStoryboard_iPhone.storyboard */; };
+		38E3BA2717A872E3002A27AA /* TeacherStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E3BA2517A872E3002A27AA /* TeacherStoryboard_iPad.storyboard */; };
+		DDBD3AF57B894FC7A0C1E193 /* libPods-URLPusher-Teacher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BB0A71F47148938B9C14F8 /* libPods-URLPusher-Teacher.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38131D5A17DC20E5009F383B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		38131D5C17DC20EA009F383B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3814CE6017B3050600C0B345 /* RDMDataProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMDataProcessor.h; sourceTree = "<group>"; };
+		3814CE6117B3050600C0B345 /* RDMDataProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMDataProcessor.m; sourceTree = "<group>"; };
+		3814CE6317B313CF00C0B345 /* RDMLink+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RDMLink+Custom.h"; sourceTree = "<group>"; };
+		3814CE6417B313CF00C0B345 /* RDMLink+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RDMLink+Custom.m"; sourceTree = "<group>"; };
+		3814CE6617B4287D00C0B345 /* RDMGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMGroup.h; sourceTree = "<group>"; };
+		3814CE6717B4287D00C0B345 /* RDMGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMGroup.m; sourceTree = "<group>"; };
+		3814CE6917B428B200C0B345 /* RDMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMDevice.h; sourceTree = "<group>"; };
+		3814CE6A17B428B200C0B345 /* RDMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMDevice.m; sourceTree = "<group>"; };
+		3814CE6C17B428EC00C0B345 /* RDMDevice+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RDMDevice+Custom.h"; sourceTree = "<group>"; };
+		3814CE6D17B428EC00C0B345 /* RDMDevice+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RDMDevice+Custom.m"; sourceTree = "<group>"; };
+		3814CE6F17B428FA00C0B345 /* RDMGroup+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RDMGroup+Custom.h"; sourceTree = "<group>"; };
+		3814CE7017B428FA00C0B345 /* RDMGroup+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RDMGroup+Custom.m"; sourceTree = "<group>"; };
+		3823513917B1B57C003F7359 /* RDMUser+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RDMUser+Custom.h"; sourceTree = "<group>"; };
+		3823513A17B1B57C003F7359 /* RDMUser+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RDMUser+Custom.m"; sourceTree = "<group>"; };
+		3823513F17B1D444003F7359 /* RDMSyncEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSyncEngine.h; sourceTree = "<group>"; };
+		3823514017B1D444003F7359 /* RDMSyncEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSyncEngine.m; sourceTree = "<group>"; };
+		38237E461820CB6E0097FE69 /* RDMRevealMenuViewContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMRevealMenuViewContainerController.h; sourceTree = "<group>"; };
+		38237E471820CB6E0097FE69 /* RDMRevealMenuViewContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMRevealMenuViewContainerController.m; sourceTree = "<group>"; };
+		385E906917BF066D00CB4DF6 /* RDMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMUser.h; sourceTree = "<group>"; };
+		385E906A17BF066D00CB4DF6 /* RDMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMUser.m; sourceTree = "<group>"; };
+		385E907217BF08B800CB4DF6 /* RDMGroupPlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMGroupPlacement.h; sourceTree = "<group>"; };
+		385E907317BF08B800CB4DF6 /* RDMGroupPlacement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMGroupPlacement.m; sourceTree = "<group>"; };
+		385E907817BF1DB700CB4DF6 /* RDMGroupPlacement+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RDMGroupPlacement+Custom.h"; sourceTree = "<group>"; };
+		385E907917BF1DB700CB4DF6 /* RDMGroupPlacement+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RDMGroupPlacement+Custom.m"; sourceTree = "<group>"; };
+		387B021218F9EFB400103007 /* RDMConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMConfiguration.h; sourceTree = "<group>"; };
+		388E6DE417A9AA17002B820D /* RDMSendLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSendLinkViewController.h; sourceTree = "<group>"; };
+		388E6DE517A9AA17002B820D /* RDMSendLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSendLinkViewController.m; sourceTree = "<group>"; };
+		388E6DEA17A9C5A0002B820D /* UIExpandableTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExpandableTableView.h; sourceTree = "<group>"; };
+		388E6DEB17A9C5A0002B820D /* UIExpandableTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIExpandableTableView.m; sourceTree = "<group>"; };
+		388E6DF017A9C6EA002B820D /* RDMSelectGroupExpandingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSelectGroupExpandingCell.h; sourceTree = "<group>"; };
+		388E6DF117A9C6EA002B820D /* RDMSelectGroupExpandingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSelectGroupExpandingCell.m; sourceTree = "<group>"; };
+		388E6DF317A9C6FA002B820D /* RDMSelectDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSelectDeviceCell.h; sourceTree = "<group>"; };
+		388E6DF417A9C6FA002B820D /* RDMSelectDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSelectDeviceCell.m; sourceTree = "<group>"; };
+		388E6E1017AA0C8E002B820D /* RDMTeacherDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherDataController.h; sourceTree = "<group>"; };
+		388E6E1117AA0C8E002B820D /* RDMTeacherDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherDataController.m; sourceTree = "<group>"; };
+		388E6E1517AA0D78002B820D /* URLPusher-Teacher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "URLPusher-Teacher.xcdatamodel"; sourceTree = "<group>"; };
+		388E6E3B17AAE3E2002B820D /* RDMTeacherSaveLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherSaveLinkViewController.h; sourceTree = "<group>"; };
+		388E6E3C17AAE3E2002B820D /* RDMTeacherSaveLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherSaveLinkViewController.m; sourceTree = "<group>"; };
+		388E6E3F17AAF346002B820D /* RDMTeacherLinkLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherLinkLibraryViewController.h; sourceTree = "<group>"; };
+		388E6E4017AAF346002B820D /* RDMTeacherLinkLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherLinkLibraryViewController.m; sourceTree = "<group>"; };
+		388E6E4417AAF722002B820D /* RDMLibraryLinkOnlyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMLibraryLinkOnlyCell.h; sourceTree = "<group>"; };
+		388E6E4517AAF722002B820D /* RDMLibraryLinkOnlyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMLibraryLinkOnlyCell.m; sourceTree = "<group>"; };
+		388E6E4717AAF7C0002B820D /* RDMLibraryLinkAndNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMLibraryLinkAndNameCell.h; sourceTree = "<group>"; };
+		388E6E4817AAF7C0002B820D /* RDMLibraryLinkAndNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMLibraryLinkAndNameCell.m; sourceTree = "<group>"; };
+		388E6E4D17AAFD92002B820D /* RDMLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDMLink.h; path = ../RDMLink.h; sourceTree = "<group>"; };
+		388E6E4E17AAFD92002B820D /* RDMLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDMLink.m; path = ../RDMLink.m; sourceTree = "<group>"; };
+		388E6E5017AD8383002B820D /* RDMSetupDevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSetupDevicesViewController.h; sourceTree = "<group>"; };
+		388E6E5117AD8383002B820D /* RDMSetupDevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSetupDevicesViewController.m; sourceTree = "<group>"; };
+		388E6E5517AD8504002B820D /* RDMSetupGroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSetupGroupsViewController.h; sourceTree = "<group>"; };
+		388E6E5617AD8504002B820D /* RDMSetupGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSetupGroupsViewController.m; sourceTree = "<group>"; };
+		388E6E5917AD8AFF002B820D /* RDMDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMDeviceCell.h; sourceTree = "<group>"; };
+		388E6E5A17AD8AFF002B820D /* RDMDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMDeviceCell.m; sourceTree = "<group>"; };
+		388E6E6617ADD89E002B820D /* RDMTeacherLinkLibraryViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherLinkLibraryViewController_iPad.h; sourceTree = "<group>"; };
+		388E6E6717ADD89E002B820D /* RDMTeacherLinkLibraryViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherLinkLibraryViewController_iPad.m; sourceTree = "<group>"; };
+		388E6E6917ADD944002B820D /* RDMTeacherLinkLibraryURLAndNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherLinkLibraryURLAndNameCell.h; sourceTree = "<group>"; };
+		388E6E6A17ADD944002B820D /* RDMTeacherLinkLibraryURLAndNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherLinkLibraryURLAndNameCell.m; sourceTree = "<group>"; };
+		388E6E6C17ADDECE002B820D /* RDMLinkLibraryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMLinkLibraryDelegate.h; sourceTree = "<group>"; };
+		388E6E6D17ADE6A3002B820D /* RDMSetupDevicesViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSetupDevicesViewController_iPad.h; sourceTree = "<group>"; };
+		388E6E6E17ADE6A3002B820D /* RDMSetupDevicesViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSetupDevicesViewController_iPad.m; sourceTree = "<group>"; };
+		388E6E7217ADE76D002B820D /* RDMDevicesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMDevicesCollectionViewCell.h; sourceTree = "<group>"; };
+		388E6E7317ADE76D002B820D /* RDMDevicesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMDevicesCollectionViewCell.m; sourceTree = "<group>"; };
+		388E6E7517ADF05E002B820D /* SSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLabel.h; sourceTree = "<group>"; };
+		388E6E7617ADF05E002B820D /* SSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLabel.m; sourceTree = "<group>"; };
+		388E6E8317AE0AF5002B820D /* RDMSetupDevicesActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSetupDevicesActionsViewController.h; sourceTree = "<group>"; };
+		388E6E8417AE0AF5002B820D /* RDMSetupDevicesActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSetupDevicesActionsViewController.m; sourceTree = "<group>"; };
+		388E6E8617AE0E66002B820D /* RDMLinkLibraryActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMLinkLibraryActionViewController.h; sourceTree = "<group>"; };
+		388E6E8717AE0E66002B820D /* RDMLinkLibraryActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMLinkLibraryActionViewController.m; sourceTree = "<group>"; };
+		388E6E8917AE16FD002B820D /* RDMEditDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMEditDeviceViewController.h; sourceTree = "<group>"; };
+		388E6E8A17AE16FD002B820D /* RDMEditDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMEditDeviceViewController.m; sourceTree = "<group>"; };
+		388E6E8E17AED52C002B820D /* RDMSetupGroupsViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSetupGroupsViewController_iPad.h; sourceTree = "<group>"; };
+		388E6E8F17AED52C002B820D /* RDMSetupGroupsViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSetupGroupsViewController_iPad.m; sourceTree = "<group>"; };
+		388E6E9117AED6CA002B820D /* RDMSetupGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSetupGroupCell.h; sourceTree = "<group>"; };
+		388E6E9217AED6CA002B820D /* RDMSetupGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSetupGroupCell.m; sourceTree = "<group>"; };
+		388E6E9417AED785002B820D /* RDMNewGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMNewGroupCell.h; sourceTree = "<group>"; };
+		388E6E9517AED785002B820D /* RDMNewGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMNewGroupCell.m; sourceTree = "<group>"; };
+		388E6E9717AEDFD2002B820D /* RDMEditGroupViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMEditGroupViewController_iPad.h; sourceTree = "<group>"; };
+		388E6E9817AEDFD2002B820D /* RDMEditGroupViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMEditGroupViewController_iPad.m; sourceTree = "<group>"; };
+		388E6E9A17AEE4F2002B820D /* RDMCreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMCreateGroupViewController.h; sourceTree = "<group>"; };
+		388E6E9B17AEE4F2002B820D /* RDMCreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMCreateGroupViewController.m; sourceTree = "<group>"; };
+		388E6E9D17AEE793002B820D /* RDMCreateGroupPickDevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMCreateGroupPickDevicesViewController.h; sourceTree = "<group>"; };
+		388E6E9E17AEE793002B820D /* RDMCreateGroupPickDevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMCreateGroupPickDevicesViewController.m; sourceTree = "<group>"; };
+		388E6EA217AEEB83002B820D /* RDMCreateGroupDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMCreateGroupDeviceCell.h; sourceTree = "<group>"; };
+		388E6EA317AEEB83002B820D /* RDMCreateGroupDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMCreateGroupDeviceCell.m; sourceTree = "<group>"; };
+		388E6EAA17AF584A002B820D /* RDMTeacherLinkLibraryURLOnlyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherLinkLibraryURLOnlyCell.h; sourceTree = "<group>"; };
+		388E6EAB17AF584A002B820D /* RDMTeacherLinkLibraryURLOnlyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherLinkLibraryURLOnlyCell.m; sourceTree = "<group>"; };
+		388E6EAD17B060D1002B820D /* RDMSetupGroupsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSetupGroupsTableViewCell.h; sourceTree = "<group>"; };
+		388E6EAE17B060D1002B820D /* RDMSetupGroupsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSetupGroupsTableViewCell.m; sourceTree = "<group>"; };
+		388E6EB017B07250002B820D /* RDMNavigationControllerStatusBarHackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMNavigationControllerStatusBarHackViewController.h; sourceTree = "<group>"; };
+		388E6EB117B07250002B820D /* RDMNavigationControllerStatusBarHackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMNavigationControllerStatusBarHackViewController.m; sourceTree = "<group>"; };
+		388E6EB317B09614002B820D /* RDMTeacherSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherSignInViewController.h; sourceTree = "<group>"; };
+		388E6EB417B09614002B820D /* RDMTeacherSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherSignInViewController.m; sourceTree = "<group>"; };
+		388E6EB617B09C2B002B820D /* RDMIntroInitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMIntroInitialViewController.h; sourceTree = "<group>"; };
+		388E6EB717B09C2B002B820D /* RDMIntroInitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMIntroInitialViewController.m; sourceTree = "<group>"; };
+		388E6EB917B09FED002B820D /* RDMTeacherCreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherCreateAccountViewController.h; sourceTree = "<group>"; };
+		388E6EBA17B09FED002B820D /* RDMTeacherCreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherCreateAccountViewController.m; sourceTree = "<group>"; };
+		388E6EBC17B0A26F002B820D /* RDMForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMForgotPasswordViewController.h; sourceTree = "<group>"; };
+		388E6EBD17B0A26F002B820D /* RDMForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMForgotPasswordViewController.m; sourceTree = "<group>"; };
+		388E6EBF17B0A469002B820D /* RDMTeacherAccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherAccountController.h; sourceTree = "<group>"; };
+		388E6EC017B0A469002B820D /* RDMTeacherAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherAccountController.m; sourceTree = "<group>"; };
+		388E6FF917B0D1C8002B820D /* RDMBaseAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMBaseAPIClient.h; sourceTree = "<group>"; };
+		388E6FFA17B0D1C8002B820D /* RDMBaseAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMBaseAPIClient.m; sourceTree = "<group>"; };
+		388E6FFB17B0D1C8002B820D /* RDMLoginAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMLoginAPIClient.h; sourceTree = "<group>"; };
+		388E6FFC17B0D1C8002B820D /* RDMLoginAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMLoginAPIClient.m; sourceTree = "<group>"; };
+		388E6FFD17B0D1C8002B820D /* RDMTokenAuthAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTokenAuthAPIClient.h; sourceTree = "<group>"; };
+		388E6FFE17B0D1C8002B820D /* RDMTokenAuthAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTokenAuthAPIClient.m; sourceTree = "<group>"; };
+		388FACB717B8B4A90085A995 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		388FACB817B8B4A90085A995 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		388FACBA17B8BE8C0085A995 /* RDMNavigationWithBackgroundImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMNavigationWithBackgroundImageViewController.h; sourceTree = "<group>"; };
+		388FACBB17B8BE8C0085A995 /* RDMNavigationWithBackgroundImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMNavigationWithBackgroundImageViewController.m; sourceTree = "<group>"; };
+		388FACC117B9F8CC0085A995 /* RDMTeacherAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherAccountViewController.h; sourceTree = "<group>"; };
+		388FACC217B9F8CC0085A995 /* RDMTeacherAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherAccountViewController.m; sourceTree = "<group>"; };
+		388FACC417B9FFDA0085A995 /* RDMTeacherEditDisplayNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherEditDisplayNameViewController.h; sourceTree = "<group>"; };
+		388FACC517B9FFDA0085A995 /* RDMTeacherEditDisplayNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherEditDisplayNameViewController.m; sourceTree = "<group>"; };
+		388FACC717B9FFE90085A995 /* RDMTeacherChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherChangePasswordViewController.h; sourceTree = "<group>"; };
+		388FACC817B9FFE90085A995 /* RDMTeacherChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherChangePasswordViewController.m; sourceTree = "<group>"; };
+		388FACCA17BAEE5A0085A995 /* UIAlertView+ErrorHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+ErrorHelpers.h"; sourceTree = "<group>"; };
+		388FACCB17BAEE5A0085A995 /* UIAlertView+ErrorHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ErrorHelpers.m"; sourceTree = "<group>"; };
+		388FACCD17BB3F100085A995 /* RDMSubscriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSubscriptionViewController.h; sourceTree = "<group>"; };
+		388FACCE17BB3F100085A995 /* RDMSubscriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSubscriptionViewController.m; sourceTree = "<group>"; };
+		388FACD417BB548A0085A995 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		388FACD517BB548A0085A995 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		388FACD717BB54AE0085A995 /* RDMInAppPurchaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMInAppPurchaseHelper.h; sourceTree = "<group>"; };
+		388FACD817BB54AE0085A995 /* RDMInAppPurchaseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMInAppPurchaseHelper.m; sourceTree = "<group>"; };
+		388FACDA17BB60AD0085A995 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		388FACDC17BC06410085A995 /* NSData+NSString_Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NSString_Conversion.h"; sourceTree = "<group>"; };
+		388FACDD17BC06410085A995 /* NSData+NSString_Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NSString_Conversion.m"; sourceTree = "<group>"; };
+		388FACDF17BC562C0085A995 /* RDMSubscriptionUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMSubscriptionUpdateViewController.h; sourceTree = "<group>"; };
+		388FACE017BC562C0085A995 /* RDMSubscriptionUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMSubscriptionUpdateViewController.m; sourceTree = "<group>"; };
+		38C3600917C6892200257AD1 /* RDMPageViewDataSourceAndDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMPageViewDataSourceAndDelegate.h; sourceTree = "<group>"; };
+		38C3600A17C6892200257AD1 /* RDMPageViewDataSourceAndDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMPageViewDataSourceAndDelegate.m; sourceTree = "<group>"; };
+		38C603F917C747FB00FAC490 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		38C6040017CA88C400FAC490 /* RDMInstructionalImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMInstructionalImageViewController.h; sourceTree = "<group>"; };
+		38C6040117CA88C400FAC490 /* RDMInstructionalImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMInstructionalImageViewController.m; sourceTree = "<group>"; };
+		38D205AD17A886BA00343A5A /* RDMTeacherMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMTeacherMenuViewController.h; sourceTree = "<group>"; };
+		38D205AE17A886BA00343A5A /* RDMTeacherMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherMenuViewController.m; sourceTree = "<group>"; };
+		38D205B317A8C80B00343A5A /* RDMMenuViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMMenuViewCell.h; sourceTree = "<group>"; };
+		38D205B417A8C80B00343A5A /* RDMMenuViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMMenuViewCell.m; sourceTree = "<group>"; };
+		38D205D317A9902A00343A5A /* RDMRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMRootViewController.h; sourceTree = "<group>"; };
+		38D205D417A9902A00343A5A /* RDMRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMRootViewController.m; sourceTree = "<group>"; };
+		38D205D617A990F400343A5A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		38D205D817A99C8600343A5A /* RDMBlurredGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMBlurredGradientView.h; sourceTree = "<group>"; };
+		38D205D917A99C8600343A5A /* RDMBlurredGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMBlurredGradientView.m; sourceTree = "<group>"; };
+		38E3BA0717A872E3002A27AA /* URLPusher-Teacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URLPusher-Teacher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E3BA0A17A872E3002A27AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		38E3BA0C17A872E3002A27AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		38E3BA0E17A872E3002A27AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		38E3BA1217A872E3002A27AA /* URLPusher-Teacher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "URLPusher-Teacher-Info.plist"; sourceTree = "<group>"; };
+		38E3BA1417A872E3002A27AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38E3BA1617A872E3002A27AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38E3BA1817A872E3002A27AA /* URLPusher-Teacher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "URLPusher-Teacher-Prefix.pch"; sourceTree = "<group>"; };
+		38E3BA1917A872E3002A27AA /* RDMTeacherAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDMTeacherAppDelegate.h; sourceTree = "<group>"; };
+		38E3BA1A17A872E3002A27AA /* RDMTeacherAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDMTeacherAppDelegate.m; sourceTree = "<group>"; };
+		38E3BA2317A872E3002A27AA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/TeacherStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		38E3BA2617A872E3002A27AA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/TeacherStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		77BC3B8A4A3F4D369F2EAF96 /* Pods-URLPusher-Teacher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLPusher-Teacher.xcconfig"; path = "../Pods/Pods-URLPusher-Teacher.xcconfig"; sourceTree = SOURCE_ROOT; };
+		D4BB0A71F47148938B9C14F8 /* libPods-URLPusher-Teacher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URLPusher-Teacher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38E3BA0417A872E3002A27AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38131D5D17DC20EA009F383B /* MobileCoreServices.framework in Frameworks */,
+				38131D5B17DC20E5009F383B /* SystemConfiguration.framework in Frameworks */,
+				38D205D717A990F400343A5A /* QuartzCore.framework in Frameworks */,
+				38E3BA0B17A872E3002A27AA /* UIKit.framework in Frameworks */,
+				38E3BA0D17A872E3002A27AA /* Foundation.framework in Frameworks */,
+				388FACDB17BB60AD0085A995 /* StoreKit.framework in Frameworks */,
+				38E3BA0F17A872E3002A27AA /* CoreGraphics.framework in Frameworks */,
+				DDBD3AF57B894FC7A0C1E193 /* libPods-URLPusher-Teacher.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38237E451820CB600097FE69 /* RDMRevealMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38237E461820CB6E0097FE69 /* RDMRevealMenuViewContainerController.h */,
+				38237E471820CB6E0097FE69 /* RDMRevealMenuViewContainerController.m */,
+			);
+			name = RDMRevealMenuViewController;
+			sourceTree = "<group>";
+		};
+		387B020818F9ECB900103007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38E3BA2217A872E3002A27AA /* TeacherStoryboard_iPhone.storyboard */,
+				38E3BA2517A872E3002A27AA /* TeacherStoryboard_iPad.storyboard */,
+				38C603F917C747FB00FAC490 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		387B020918F9ED6B00103007 /* Helpers & Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				38237E451820CB600097FE69 /* RDMRevealMenuViewController */,
+				387B020D18F9EE4800103007 /* UIAlert+ErrorHelpers */,
+				387B020E18F9EE5400103007 /* SSLabel */,
+				387B020F18F9EE6100103007 /* UIExplandableTableView */,
+				387B020B18F9EDB200103007 /* UIImage+ImageEffects */,
+				387B020A18F9EDA200103007 /* NSData+NSString_Conversion */,
+			);
+			name = "Helpers & Third Party";
+			sourceTree = "<group>";
+		};
+		387B020A18F9EDA200103007 /* NSData+NSString_Conversion */ = {
+			isa = PBXGroup;
+			children = (
+				388FACDC17BC06410085A995 /* NSData+NSString_Conversion.h */,
+				388FACDD17BC06410085A995 /* NSData+NSString_Conversion.m */,
+			);
+			name = "NSData+NSString_Conversion";
+			sourceTree = "<group>";
+		};
+		387B020B18F9EDB200103007 /* UIImage+ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				388FACB717B8B4A90085A995 /* UIImage+ImageEffects.h */,
+				388FACB817B8B4A90085A995 /* UIImage+ImageEffects.m */,
+			);
+			name = "UIImage+ImageEffects";
+			sourceTree = "<group>";
+		};
+		387B020C18F9EDE100103007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E1417AA0D78002B820D /* URLPusher-Teacher.xcdatamodeld */,
+				385E907217BF08B800CB4DF6 /* RDMGroupPlacement.h */,
+				385E907317BF08B800CB4DF6 /* RDMGroupPlacement.m */,
+				385E907817BF1DB700CB4DF6 /* RDMGroupPlacement+Custom.h */,
+				385E907917BF1DB700CB4DF6 /* RDMGroupPlacement+Custom.m */,
+				385E906917BF066D00CB4DF6 /* RDMUser.h */,
+				385E906A17BF066D00CB4DF6 /* RDMUser.m */,
+				3814CE6917B428B200C0B345 /* RDMDevice.h */,
+				3814CE6A17B428B200C0B345 /* RDMDevice.m */,
+				3814CE6C17B428EC00C0B345 /* RDMDevice+Custom.h */,
+				3814CE6D17B428EC00C0B345 /* RDMDevice+Custom.m */,
+				3814CE6617B4287D00C0B345 /* RDMGroup.h */,
+				3814CE6717B4287D00C0B345 /* RDMGroup.m */,
+				3814CE6F17B428FA00C0B345 /* RDMGroup+Custom.h */,
+				3814CE7017B428FA00C0B345 /* RDMGroup+Custom.m */,
+				388E6E4D17AAFD92002B820D /* RDMLink.h */,
+				388E6E4E17AAFD92002B820D /* RDMLink.m */,
+				3814CE6317B313CF00C0B345 /* RDMLink+Custom.h */,
+				3814CE6417B313CF00C0B345 /* RDMLink+Custom.m */,
+				3823513917B1B57C003F7359 /* RDMUser+Custom.h */,
+				3823513A17B1B57C003F7359 /* RDMUser+Custom.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		387B020D18F9EE4800103007 /* UIAlert+ErrorHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				388FACCA17BAEE5A0085A995 /* UIAlertView+ErrorHelpers.h */,
+				388FACCB17BAEE5A0085A995 /* UIAlertView+ErrorHelpers.m */,
+			);
+			name = "UIAlert+ErrorHelpers";
+			sourceTree = "<group>";
+		};
+		387B020E18F9EE5400103007 /* SSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E7517ADF05E002B820D /* SSLabel.h */,
+				388E6E7617ADF05E002B820D /* SSLabel.m */,
+			);
+			name = SSLabel;
+			sourceTree = "<group>";
+		};
+		387B020F18F9EE6100103007 /* UIExplandableTableView */ = {
+			isa = PBXGroup;
+			children = (
+				388E6DEA17A9C5A0002B820D /* UIExpandableTableView.h */,
+				388E6DEB17A9C5A0002B820D /* UIExpandableTableView.m */,
+			);
+			name = UIExplandableTableView;
+			sourceTree = "<group>";
+		};
+		387B021018F9EE9800103007 /* Login Views & Subscription Views */ = {
+			isa = PBXGroup;
+			children = (
+				388E6EB317B09614002B820D /* RDMTeacherSignInViewController.h */,
+				388E6EB417B09614002B820D /* RDMTeacherSignInViewController.m */,
+				388E6EB917B09FED002B820D /* RDMTeacherCreateAccountViewController.h */,
+				388E6EBA17B09FED002B820D /* RDMTeacherCreateAccountViewController.m */,
+				388E6EBC17B0A26F002B820D /* RDMForgotPasswordViewController.h */,
+				388E6EBD17B0A26F002B820D /* RDMForgotPasswordViewController.m */,
+				388FACC117B9F8CC0085A995 /* RDMTeacherAccountViewController.h */,
+				388FACC217B9F8CC0085A995 /* RDMTeacherAccountViewController.m */,
+				388FACC417B9FFDA0085A995 /* RDMTeacherEditDisplayNameViewController.h */,
+				388FACC517B9FFDA0085A995 /* RDMTeacherEditDisplayNameViewController.m */,
+				388FACC717B9FFE90085A995 /* RDMTeacherChangePasswordViewController.h */,
+				388FACC817B9FFE90085A995 /* RDMTeacherChangePasswordViewController.m */,
+			);
+			name = "Login Views & Subscription Views";
+			sourceTree = "<group>";
+		};
+		387B021118F9EED500103007 /* Subcription View */ = {
+			isa = PBXGroup;
+			children = (
+				388FACCD17BB3F100085A995 /* RDMSubscriptionViewController.h */,
+				388FACCE17BB3F100085A995 /* RDMSubscriptionViewController.m */,
+				388FACDF17BC562C0085A995 /* RDMSubscriptionUpdateViewController.h */,
+				388FACE017BC562C0085A995 /* RDMSubscriptionUpdateViewController.m */,
+				388FACD417BB548A0085A995 /* IAPHelper.h */,
+				388FACD517BB548A0085A995 /* IAPHelper.m */,
+				388FACD717BB54AE0085A995 /* RDMInAppPurchaseHelper.h */,
+				388FACD817BB54AE0085A995 /* RDMInAppPurchaseHelper.m */,
+			);
+			name = "Subcription View";
+			sourceTree = "<group>";
+		};
+		387B021318F9F0C300103007 /* Initial View */ = {
+			isa = PBXGroup;
+			children = (
+				38C3600917C6892200257AD1 /* RDMPageViewDataSourceAndDelegate.h */,
+				38C3600A17C6892200257AD1 /* RDMPageViewDataSourceAndDelegate.m */,
+				38C6040017CA88C400FAC490 /* RDMInstructionalImageViewController.h */,
+				38C6040117CA88C400FAC490 /* RDMInstructionalImageViewController.m */,
+				388FACBA17B8BE8C0085A995 /* RDMNavigationWithBackgroundImageViewController.h */,
+				388FACBB17B8BE8C0085A995 /* RDMNavigationWithBackgroundImageViewController.m */,
+				388E6EB617B09C2B002B820D /* RDMIntroInitialViewController.h */,
+				388E6EB717B09C2B002B820D /* RDMIntroInitialViewController.m */,
+			);
+			name = "Initial View";
+			sourceTree = "<group>";
+		};
+		388E6DE317A9A9FA002B820D /* Menu View */ = {
+			isa = PBXGroup;
+			children = (
+				38D205AD17A886BA00343A5A /* RDMTeacherMenuViewController.h */,
+				38D205AE17A886BA00343A5A /* RDMTeacherMenuViewController.m */,
+				38D205B317A8C80B00343A5A /* RDMMenuViewCell.h */,
+				38D205B417A8C80B00343A5A /* RDMMenuViewCell.m */,
+				38D205D817A99C8600343A5A /* RDMBlurredGradientView.h */,
+				38D205D917A99C8600343A5A /* RDMBlurredGradientView.m */,
+			);
+			name = "Menu View";
+			sourceTree = "<group>";
+		};
+		388E6E0F17AA0C00002B820D /* Send Link View */ = {
+			isa = PBXGroup;
+			children = (
+				388E6DE417A9AA17002B820D /* RDMSendLinkViewController.h */,
+				388E6DE517A9AA17002B820D /* RDMSendLinkViewController.m */,
+				388E6DF017A9C6EA002B820D /* RDMSelectGroupExpandingCell.h */,
+				388E6DF117A9C6EA002B820D /* RDMSelectGroupExpandingCell.m */,
+				388E6DF317A9C6FA002B820D /* RDMSelectDeviceCell.h */,
+				388E6DF417A9C6FA002B820D /* RDMSelectDeviceCell.m */,
+			);
+			name = "Send Link View";
+			sourceTree = "<group>";
+		};
+		388E6E1317AA0C97002B820D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3823513F17B1D444003F7359 /* RDMSyncEngine.h */,
+				3823514017B1D444003F7359 /* RDMSyncEngine.m */,
+				388E6E1017AA0C8E002B820D /* RDMTeacherDataController.h */,
+				388E6E1117AA0C8E002B820D /* RDMTeacherDataController.m */,
+				3814CE6017B3050600C0B345 /* RDMDataProcessor.h */,
+				3814CE6117B3050600C0B345 /* RDMDataProcessor.m */,
+				387B020C18F9EDE100103007 /* Models */,
+				388E6F6117B0BE83002B820D /* Networking */,
+				388E6EBF17B0A469002B820D /* RDMTeacherAccountController.h */,
+				388E6EC017B0A469002B820D /* RDMTeacherAccountController.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		388E6E3E17AAE3E8002B820D /* Save Link View */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E3B17AAE3E2002B820D /* RDMTeacherSaveLinkViewController.h */,
+				388E6E3C17AAE3E2002B820D /* RDMTeacherSaveLinkViewController.m */,
+			);
+			name = "Save Link View";
+			sourceTree = "<group>";
+		};
+		388E6E4217AAF34C002B820D /* Link Library View */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E6C17ADDECE002B820D /* RDMLinkLibraryDelegate.h */,
+				388E6E6517ADD87B002B820D /* iPhone */,
+				388E6E6417ADD86E002B820D /* iPad */,
+			);
+			name = "Link Library View";
+			sourceTree = "<group>";
+		};
+		388E6E5317AD8387002B820D /* SetupDevices View */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E7017ADE6A8002B820D /* iPhone */,
+				388E6E7117ADE6B2002B820D /* iPad */,
+			);
+			name = "SetupDevices View";
+			sourceTree = "<group>";
+		};
+		388E6E5417AD839E002B820D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38D205D317A9902A00343A5A /* RDMRootViewController.h */,
+				38D205D417A9902A00343A5A /* RDMRootViewController.m */,
+				387B021318F9F0C300103007 /* Initial View */,
+				387B021018F9EE9800103007 /* Login Views & Subscription Views */,
+				387B021118F9EED500103007 /* Subcription View */,
+				388E6DE317A9A9FA002B820D /* Menu View */,
+				388E6E0F17AA0C00002B820D /* Send Link View */,
+				388E6E3E17AAE3E8002B820D /* Save Link View */,
+				388E6E4217AAF34C002B820D /* Link Library View */,
+				388E6E5317AD8387002B820D /* SetupDevices View */,
+				388E6E5817AD8538002B820D /* Setup Groups View */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		388E6E5817AD8538002B820D /* Setup Groups View */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E8C17AED4FB002B820D /* iPhone */,
+				388E6E8D17AED502002B820D /* iPad */,
+			);
+			name = "Setup Groups View";
+			sourceTree = "<group>";
+		};
+		388E6E6417ADD86E002B820D /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E6617ADD89E002B820D /* RDMTeacherLinkLibraryViewController_iPad.h */,
+				388E6E6717ADD89E002B820D /* RDMTeacherLinkLibraryViewController_iPad.m */,
+				388E6E8617AE0E66002B820D /* RDMLinkLibraryActionViewController.h */,
+				388E6E8717AE0E66002B820D /* RDMLinkLibraryActionViewController.m */,
+				388E6E6917ADD944002B820D /* RDMTeacherLinkLibraryURLAndNameCell.h */,
+				388E6E6A17ADD944002B820D /* RDMTeacherLinkLibraryURLAndNameCell.m */,
+				388E6EAA17AF584A002B820D /* RDMTeacherLinkLibraryURLOnlyCell.h */,
+				388E6EAB17AF584A002B820D /* RDMTeacherLinkLibraryURLOnlyCell.m */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		388E6E6517ADD87B002B820D /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E3F17AAF346002B820D /* RDMTeacherLinkLibraryViewController.h */,
+				388E6E4017AAF346002B820D /* RDMTeacherLinkLibraryViewController.m */,
+				388E6E4417AAF722002B820D /* RDMLibraryLinkOnlyCell.h */,
+				388E6E4517AAF722002B820D /* RDMLibraryLinkOnlyCell.m */,
+				388E6E4717AAF7C0002B820D /* RDMLibraryLinkAndNameCell.h */,
+				388E6E4817AAF7C0002B820D /* RDMLibraryLinkAndNameCell.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		388E6E7017ADE6A8002B820D /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E5017AD8383002B820D /* RDMSetupDevicesViewController.h */,
+				388E6E5117AD8383002B820D /* RDMSetupDevicesViewController.m */,
+				388E6E5917AD8AFF002B820D /* RDMDeviceCell.h */,
+				388E6E5A17AD8AFF002B820D /* RDMDeviceCell.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		388E6E7117ADE6B2002B820D /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E6D17ADE6A3002B820D /* RDMSetupDevicesViewController_iPad.h */,
+				388E6E6E17ADE6A3002B820D /* RDMSetupDevicesViewController_iPad.m */,
+				388E6E8317AE0AF5002B820D /* RDMSetupDevicesActionsViewController.h */,
+				388E6E8417AE0AF5002B820D /* RDMSetupDevicesActionsViewController.m */,
+				388E6E8917AE16FD002B820D /* RDMEditDeviceViewController.h */,
+				388E6E8A17AE16FD002B820D /* RDMEditDeviceViewController.m */,
+				388E6E7217ADE76D002B820D /* RDMDevicesCollectionViewCell.h */,
+				388E6E7317ADE76D002B820D /* RDMDevicesCollectionViewCell.m */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		388E6E8C17AED4FB002B820D /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E5517AD8504002B820D /* RDMSetupGroupsViewController.h */,
+				388E6E5617AD8504002B820D /* RDMSetupGroupsViewController.m */,
+				388E6EAD17B060D1002B820D /* RDMSetupGroupsTableViewCell.h */,
+				388E6EAE17B060D1002B820D /* RDMSetupGroupsTableViewCell.m */,
+				388E6EB017B07250002B820D /* RDMNavigationControllerStatusBarHackViewController.h */,
+				388E6EB117B07250002B820D /* RDMNavigationControllerStatusBarHackViewController.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		388E6E8D17AED502002B820D /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E8E17AED52C002B820D /* RDMSetupGroupsViewController_iPad.h */,
+				388E6E8F17AED52C002B820D /* RDMSetupGroupsViewController_iPad.m */,
+				388E6EA017AEEB47002B820D /* Editing/Creating Group */,
+				388E6E9117AED6CA002B820D /* RDMSetupGroupCell.h */,
+				388E6E9217AED6CA002B820D /* RDMSetupGroupCell.m */,
+				388E6E9417AED785002B820D /* RDMNewGroupCell.h */,
+				388E6E9517AED785002B820D /* RDMNewGroupCell.m */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		388E6EA017AEEB47002B820D /* Editing/Creating Group */ = {
+			isa = PBXGroup;
+			children = (
+				388E6E9717AEDFD2002B820D /* RDMEditGroupViewController_iPad.h */,
+				388E6E9817AEDFD2002B820D /* RDMEditGroupViewController_iPad.m */,
+				388E6E9A17AEE4F2002B820D /* RDMCreateGroupViewController.h */,
+				388E6E9B17AEE4F2002B820D /* RDMCreateGroupViewController.m */,
+				388E6E9D17AEE793002B820D /* RDMCreateGroupPickDevicesViewController.h */,
+				388E6E9E17AEE793002B820D /* RDMCreateGroupPickDevicesViewController.m */,
+				388E6EA217AEEB83002B820D /* RDMCreateGroupDeviceCell.h */,
+				388E6EA317AEEB83002B820D /* RDMCreateGroupDeviceCell.m */,
+			);
+			name = "Editing/Creating Group";
+			sourceTree = "<group>";
+		};
+		388E6F6117B0BE83002B820D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				388E6FF917B0D1C8002B820D /* RDMBaseAPIClient.h */,
+				388E6FFA17B0D1C8002B820D /* RDMBaseAPIClient.m */,
+				388E6FFB17B0D1C8002B820D /* RDMLoginAPIClient.h */,
+				388E6FFC17B0D1C8002B820D /* RDMLoginAPIClient.m */,
+				388E6FFD17B0D1C8002B820D /* RDMTokenAuthAPIClient.h */,
+				388E6FFE17B0D1C8002B820D /* RDMTokenAuthAPIClient.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		38E3B9FE17A872E3002A27AA = {
+			isa = PBXGroup;
+			children = (
+				38E3BA1017A872E3002A27AA /* URLPusher-Teacher */,
+				38E3BA0917A872E3002A27AA /* Frameworks */,
+				38E3BA0817A872E3002A27AA /* Products */,
+				77BC3B8A4A3F4D369F2EAF96 /* Pods-URLPusher-Teacher.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		38E3BA0817A872E3002A27AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38E3BA0717A872E3002A27AA /* URLPusher-Teacher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38E3BA0917A872E3002A27AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38131D5C17DC20EA009F383B /* MobileCoreServices.framework */,
+				38131D5A17DC20E5009F383B /* SystemConfiguration.framework */,
+				388FACDA17BB60AD0085A995 /* StoreKit.framework */,
+				38D205D617A990F400343A5A /* QuartzCore.framework */,
+				38E3BA0A17A872E3002A27AA /* UIKit.framework */,
+				38E3BA0C17A872E3002A27AA /* Foundation.framework */,
+				38E3BA0E17A872E3002A27AA /* CoreGraphics.framework */,
+				D4BB0A71F47148938B9C14F8 /* libPods-URLPusher-Teacher.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38E3BA1017A872E3002A27AA /* URLPusher-Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				387B021218F9EFB400103007 /* RDMConfiguration.h */,
+				38E3BA1917A872E3002A27AA /* RDMTeacherAppDelegate.h */,
+				38E3BA1A17A872E3002A27AA /* RDMTeacherAppDelegate.m */,
+				388E6E1317AA0C97002B820D /* Data */,
+				388E6E5417AD839E002B820D /* View Controllers */,
+				387B020818F9ECB900103007 /* Resources */,
+				387B020918F9ED6B00103007 /* Helpers & Third Party */,
+				38E3BA1117A872E3002A27AA /* Supporting Files */,
+			);
+			path = "URLPusher-Teacher";
+			sourceTree = "<group>";
+		};
+		38E3BA1117A872E3002A27AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38E3BA1217A872E3002A27AA /* URLPusher-Teacher-Info.plist */,
+				38E3BA1317A872E3002A27AA /* InfoPlist.strings */,
+				38E3BA1617A872E3002A27AA /* main.m */,
+				38E3BA1817A872E3002A27AA /* URLPusher-Teacher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38E3BA0617A872E3002A27AA /* URLPusher-Teacher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38E3BA2D17A872E3002A27AA /* Build configuration list for PBXNativeTarget "URLPusher-Teacher" */;
+			buildPhases = (
+				D078D3E1A9B84AFF9C2C572D /* Check Pods Manifest.lock */,
+				38E3BA0317A872E3002A27AA /* Sources */,
+				38E3BA0417A872E3002A27AA /* Frameworks */,
+				38E3BA0517A872E3002A27AA /* Resources */,
+				DB37338FF69244C9B2FA3819 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "URLPusher-Teacher";
+			productName = "URLPusher-Teacher";
+			productReference = 38E3BA0717A872E3002A27AA /* URLPusher-Teacher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38E3B9FF17A872E3002A27AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RDM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Reese McLean";
+				TargetAttributes = {
+					38E3BA0617A872E3002A27AA = {
+						DevelopmentTeam = MBKMEYDFLA;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 38E3BA0217A872E3002A27AA /* Build configuration list for PBXProject "URLPusher-Teacher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38E3B9FE17A872E3002A27AA;
+			productRefGroup = 38E3BA0817A872E3002A27AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38E3BA0617A872E3002A27AA /* URLPusher-Teacher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38E3BA0517A872E3002A27AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38C603FA17C747FB00FAC490 /* Images.xcassets in Resources */,
+				38E3BA1517A872E3002A27AA /* InfoPlist.strings in Resources */,
+				38E3BA2417A872E3002A27AA /* TeacherStoryboard_iPhone.storyboard in Resources */,
+				38E3BA2717A872E3002A27AA /* TeacherStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D078D3E1A9B84AFF9C2C572D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB37338FF69244C9B2FA3819 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-URLPusher-Teacher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38E3BA0317A872E3002A27AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388E6E3D17AAE3E2002B820D /* RDMTeacherSaveLinkViewController.m in Sources */,
+				388E6EBB17B09FED002B820D /* RDMTeacherCreateAccountViewController.m in Sources */,
+				388E6EA417AEEB83002B820D /* RDMCreateGroupDeviceCell.m in Sources */,
+				388E6EB817B09C2B002B820D /* RDMIntroInitialViewController.m in Sources */,
+				38D205D517A9902A00343A5A /* RDMRootViewController.m in Sources */,
+				3823514117B1D444003F7359 /* RDMSyncEngine.m in Sources */,
+				388E6EB217B07250002B820D /* RDMNavigationControllerStatusBarHackViewController.m in Sources */,
+				388E6E5B17AD8AFF002B820D /* RDMDeviceCell.m in Sources */,
+				388FACD917BB54AE0085A995 /* RDMInAppPurchaseHelper.m in Sources */,
+				388E6E8817AE0E66002B820D /* RDMLinkLibraryActionViewController.m in Sources */,
+				38D205B517A8C80B00343A5A /* RDMMenuViewCell.m in Sources */,
+				388E6E8517AE0AF5002B820D /* RDMSetupDevicesActionsViewController.m in Sources */,
+				388E6EBE17B0A26F002B820D /* RDMForgotPasswordViewController.m in Sources */,
+				388E6EAC17AF584A002B820D /* RDMTeacherLinkLibraryURLOnlyCell.m in Sources */,
+				388E6E1217AA0C8E002B820D /* RDMTeacherDataController.m in Sources */,
+				38D205AF17A886BA00343A5A /* RDMTeacherMenuViewController.m in Sources */,
+				388FACB917B8B4A90085A995 /* UIImage+ImageEffects.m in Sources */,
+				388E6E9917AEDFD2002B820D /* RDMEditGroupViewController_iPad.m in Sources */,
+				385E906B17BF066D00CB4DF6 /* RDMUser.m in Sources */,
+				3814CE7117B428FA00C0B345 /* RDMGroup+Custom.m in Sources */,
+				38D205DA17A99C8600343A5A /* RDMBlurredGradientView.m in Sources */,
+				388E6E6817ADD89E002B820D /* RDMTeacherLinkLibraryViewController_iPad.m in Sources */,
+				388E6E7417ADE76D002B820D /* RDMDevicesCollectionViewCell.m in Sources */,
+				388FACC917B9FFE90085A995 /* RDMTeacherChangePasswordViewController.m in Sources */,
+				388E6E6F17ADE6A3002B820D /* RDMSetupDevicesViewController_iPad.m in Sources */,
+				38C3600B17C6892200257AD1 /* RDMPageViewDataSourceAndDelegate.m in Sources */,
+				38E3BA1717A872E3002A27AA /* main.m in Sources */,
+				388E6E9F17AEE793002B820D /* RDMCreateGroupPickDevicesViewController.m in Sources */,
+				3814CE6B17B428B200C0B345 /* RDMDevice.m in Sources */,
+				388E6E1617AA0D78002B820D /* URLPusher-Teacher.xcdatamodeld in Sources */,
+				388FACC317B9F8CC0085A995 /* RDMTeacherAccountViewController.m in Sources */,
+				388FACE117BC562C0085A995 /* RDMSubscriptionUpdateViewController.m in Sources */,
+				3823513B17B1B57C003F7359 /* RDMUser+Custom.m in Sources */,
+				388FACBC17B8BE8C0085A995 /* RDMNavigationWithBackgroundImageViewController.m in Sources */,
+				388E6FFF17B0D1C8002B820D /* RDMBaseAPIClient.m in Sources */,
+				388E6E7717ADF05E002B820D /* SSLabel.m in Sources */,
+				38C6040217CA88C400FAC490 /* RDMInstructionalImageViewController.m in Sources */,
+				38237E481820CB6E0097FE69 /* RDMRevealMenuViewContainerController.m in Sources */,
+				388E6DF217A9C6EA002B820D /* RDMSelectGroupExpandingCell.m in Sources */,
+				388FACD617BB548A0085A995 /* IAPHelper.m in Sources */,
+				388E6EAF17B060D1002B820D /* RDMSetupGroupsTableViewCell.m in Sources */,
+				3814CE6817B4287D00C0B345 /* RDMGroup.m in Sources */,
+				388E700117B0D1C8002B820D /* RDMTokenAuthAPIClient.m in Sources */,
+				3814CE6517B313CF00C0B345 /* RDMLink+Custom.m in Sources */,
+				38E3BA1B17A872E3002A27AA /* RDMTeacherAppDelegate.m in Sources */,
+				388E6E5217AD8383002B820D /* RDMSetupDevicesViewController.m in Sources */,
+				388E6E5717AD8504002B820D /* RDMSetupGroupsViewController.m in Sources */,
+				388E6E6B17ADD944002B820D /* RDMTeacherLinkLibraryURLAndNameCell.m in Sources */,
+				388E6E8B17AE16FD002B820D /* RDMEditDeviceViewController.m in Sources */,
+				388FACCF17BB3F100085A995 /* RDMSubscriptionViewController.m in Sources */,
+				388E6DEC17A9C5A0002B820D /* UIExpandableTableView.m in Sources */,
+				388FACDE17BC06410085A995 /* NSData+NSString_Conversion.m in Sources */,
+				388E700017B0D1C8002B820D /* RDMLoginAPIClient.m in Sources */,
+				388FACC617B9FFDA0085A995 /* RDMTeacherEditDisplayNameViewController.m in Sources */,
+				388E6EC117B0A469002B820D /* RDMTeacherAccountController.m in Sources */,
+				388FACCC17BAEE5A0085A995 /* UIAlertView+ErrorHelpers.m in Sources */,
+				388E6E4917AAF7C0002B820D /* RDMLibraryLinkAndNameCell.m in Sources */,
+				388E6DF517A9C6FA002B820D /* RDMSelectDeviceCell.m in Sources */,
+				388E6E9C17AEE4F2002B820D /* RDMCreateGroupViewController.m in Sources */,
+				385E907A17BF1DB700CB4DF6 /* RDMGroupPlacement+Custom.m in Sources */,
+				388E6E4117AAF346002B820D /* RDMTeacherLinkLibraryViewController.m in Sources */,
+				385E907617BF08B800CB4DF6 /* RDMGroupPlacement.m in Sources */,
+				388E6E9617AED785002B820D /* RDMNewGroupCell.m in Sources */,
+				388E6E9317AED6CA002B820D /* RDMSetupGroupCell.m in Sources */,
+				388E6E4617AAF722002B820D /* RDMLibraryLinkOnlyCell.m in Sources */,
+				3814CE6E17B428EC00C0B345 /* RDMDevice+Custom.m in Sources */,
+				388E6EB517B09614002B820D /* RDMTeacherSignInViewController.m in Sources */,
+				388E6E4F17AAFD92002B820D /* RDMLink.m in Sources */,
+				388E6E9017AED52C002B820D /* RDMSetupGroupsViewController_iPad.m in Sources */,
+				3814CE6217B3050600C0B345 /* RDMDataProcessor.m in Sources */,
+				388E6DE617A9AA17002B820D /* RDMSendLinkViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		38E3BA1317A872E3002A27AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38E3BA1417A872E3002A27AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		38E3BA2217A872E3002A27AA /* TeacherStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38E3BA2317A872E3002A27AA /* en */,
+			);
+			name = TeacherStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		38E3BA2517A872E3002A27AA /* TeacherStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38E3BA2617A872E3002A27AA /* en */,
+			);
+			name = TeacherStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38AFF80A17E7E43000D0DB63 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		38AFF80B17E7E43000D0DB63 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BC3B8A4A3F4D369F2EAF96 /* Pods-URLPusher-Teacher.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "URLPusher-Teacher/URLPusher-Teacher-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/ViewDeck\"",
+					"${BUILT_PRODUCTS_DIR}",
+				);
+				INFOPLIST_FILE = "URLPusher-Teacher/URLPusher-Teacher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/URLPusherIOS-erdhqjzlshuwuyffcajnmwcjcomu/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "98C9B814-60DB-436F-87B9-17C71D4FD1CF";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc;
+		};
+		38E3BA2B17A872E3002A27AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38E3BA2C17A872E3002A27AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38E3BA2E17A872E3002A27AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BC3B8A4A3F4D369F2EAF96 /* Pods-URLPusher-Teacher.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "URLPusher-Teacher/URLPusher-Teacher-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/ViewDeck\"",
+					"${BUILT_PRODUCTS_DIR}",
+				);
+				INFOPLIST_FILE = "URLPusher-Teacher/URLPusher-Teacher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/URLPusherIOS-erdhqjzlshuwuyffcajnmwcjcomu/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "AE5EB788-0B17-4479-BFA5-6EDDFFA2AD70";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		38E3BA2F17A872E3002A27AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BC3B8A4A3F4D369F2EAF96 /* Pods-URLPusher-Teacher.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "URLPusher-Teacher/URLPusher-Teacher-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/ViewDeck\"",
+					"${BUILT_PRODUCTS_DIR}",
+				);
+				INFOPLIST_FILE = "URLPusher-Teacher/URLPusher-Teacher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/URLPusherIOS-erdhqjzlshuwuyffcajnmwcjcomu/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "08680376-A967-4265-BAC1-9428836A427A";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38E3BA0217A872E3002A27AA /* Build configuration list for PBXProject "URLPusher-Teacher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E3BA2B17A872E3002A27AA /* Debug */,
+				38E3BA2C17A872E3002A27AA /* Release */,
+				38AFF80A17E7E43000D0DB63 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38E3BA2D17A872E3002A27AA /* Build configuration list for PBXNativeTarget "URLPusher-Teacher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E3BA2E17A872E3002A27AA /* Debug */,
+				38E3BA2F17A872E3002A27AA /* Release */,
+				38AFF80B17E7E43000D0DB63 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		388E6E1417AA0D78002B820D /* URLPusher-Teacher.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				388E6E1517AA0D78002B820D /* URLPusher-Teacher.xcdatamodel */,
+			);
+			currentVersion = 388E6E1517AA0D78002B820D /* URLPusher-Teacher.xcdatamodel */;
+			path = "URLPusher-Teacher.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 38E3B9FF17A872E3002A27AA /* Project object */;
+}

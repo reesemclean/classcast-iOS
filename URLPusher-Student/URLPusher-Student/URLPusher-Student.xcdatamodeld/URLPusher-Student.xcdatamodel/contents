@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3389" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="RDMStudentDevice" representedClassName="RDMStudentDevice" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="links" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RDMStudentLink" inverseName="device" inverseEntity="RDMStudentLink" syncable="YES"/>
+        <relationship name="teachers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RDMTeacher" inverseName="device" inverseEntity="RDMTeacher" syncable="YES"/>
+    </entity>
+    <entity name="RDMStudentLink" representedClassName="RDMStudentLink" syncable="YES">
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasBeenDeleted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastSentOn" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="device" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RDMStudentDevice" inverseName="links" inverseEntity="RDMStudentDevice" syncable="YES"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RDMTeacher" inverseName="sentLinks" inverseEntity="RDMTeacher" syncable="YES"/>
+    </entity>
+    <entity name="RDMTeacher" representedClassName="RDMTeacher" syncable="YES">
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasBeenDeleted" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="device" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RDMStudentDevice" inverseName="teachers" inverseEntity="RDMStudentDevice" syncable="YES"/>
+        <relationship name="sentLinks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RDMStudentLink" inverseName="teacher" inverseEntity="RDMStudentLink" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RDMStudentDevice" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="RDMStudentLink" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="RDMTeacher" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
