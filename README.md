@@ -6,7 +6,7 @@ ClassCast is the easiest way to send links to other iOS devices. Use the teacher
 
 ### Syncing
 
-When you build each app you should see warnings about missing API urls. You will need to an api base url to a ClassCast server.
+When you build each app you should see warnings about missing API urls. You will need an api base url to a ClassCast server.
 
 ### Push Notifcations
 
